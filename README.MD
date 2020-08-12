@@ -25,7 +25,7 @@ $ verify
 ```
 
 ### Starting from Scratch
-
+```
 mkdir appium && d appium
 sudo npm install -g appium
 ~/appium$ sudo npm intall -g appium-doctor
@@ -94,3 +94,4 @@ async function main () {
 
 main()
 "
+```
