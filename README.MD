@@ -37,7 +37,7 @@ appium-doctor
 x Android_Home is not setup
 check Android SDK path
 nano ~/.bashrc
-export ANDROID_HOME=/home/namgyeong/Andriod/Sdk
+export ANDROID_HOME=/home/[username]/Android/Sdk
 sudo npm install -g mjpeg-consumer
 which bundletool.jar # if you can't find it need to download download and move to the appium folder, change name bundletool-blah-blah.jar into bundletool.jar
 export PATH=$PATH:$PWD
@@ -64,7 +64,7 @@ const opts = {
     platformName: ""Android"",
     platformVersion: ""9"",
     deviceName: ""Nexus 6 API 28"",   //check this out on Android-studio 
-    app: ""/home/namgyeong/AndroidStudioProjects/app/build/app/outputs/apk/app.apk"", //apk location
+    app: ""/home/[username]/AndroidStudioProjects/app/build/app/outputs/apk/app.apk"", //apk location
     appPackage: ""com.datahighway.app"",  // AndroidManifest.xml
     appActivity: "".MainActivity"",  // AndroidManifest.xml
     automationName: ""UiAutomator2""
