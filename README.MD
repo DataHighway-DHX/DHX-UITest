@@ -25,38 +25,35 @@ $ verify
 ```
 
 ### Starting from Scratch
+- Prerequisites
 ```
-mkdir appium && d appium
-sudo npm install -g appium
-~/appium$ sudo npm intall -g appium-doctor
-~/appium$ appium-doctor
+mkdir appium && cd appium
+sudo npm install -g appium --unsafe-perm=true --allow-root
+sudo npm intall -g appium-doctor
+```
+- Run appium-doctor to check for any missing variables or dependencies
+```
+appium-doctor
 x Android_Home is not setup
 check Android SDK path
-~/appium$ nano ~/.bashrc
+nano ~/.bashrc
 export ANDROID_HOME=/home/namgyeong/Andriod/Sdk
-~/appium$ sudo npm install -g mjpeg-consumer
-~/appium$  which bundletool.jar  <-- if you can't find it need to download
-download and move to the appium folder.
-change name bundletool-blah-blah.jar into bundletool.jar
-which bundletool.jar
+sudo npm install -g mjpeg-consumer
+which bundletool.jar # if you can't find it need to download download and move to the appium folder, change name bundletool-blah-blah.jar into bundletool.jar
 export PATH=$PATH:$PWD
-ls -l
-check permissions -rw-rw-r-- 1 namgyeong namgyeong [date] bundletool.jar
-~/appium$ chmod +x bundletool.jar
-which bundletool.jar  you should see path  home/~~
-appium doctor
-which appium    
-ls -la
-~/appium$ sudo npm install -g appium   
-~/appium$ sudo npm install -g appium  --chromedriver-skip-install
-~/appium$ appium
+chmod +x bundletool.jar
+which bundletool.jar # you should see path  home/~~
+appium-doctor
+```
+- Test case setup
 make new tab on terminal
+```
 mkdir tests $$ cd tests
-~/appium/tests$ npm init -y 
-~/appium/tests$ sudo npm install webdriverio
-ls -l 
-
-~/appium/tests$ nano index.js
+npm init -y 
+sudo npm install webdriverio
+```
+nano index.js
+```
 "const wdio = require(""webdriverio"");
 
 // javascript
