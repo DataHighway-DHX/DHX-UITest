@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-aop</artifactId>
+  <versioning>
+    <release>5.1.8.RELEASE</release>
+    <versions>
+      <version>5.1.8.RELEASE</version>
+    </versions>
+    <lastUpdated>20200728144826</lastUpdated>
+  </versioning>
+</metadata>
